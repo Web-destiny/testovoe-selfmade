@@ -1,0 +1,330 @@
+@font-face
+  font-family: "GilroyBold"
+  src : url("../fonts/Gilroy-ExtraBold.otf")
+
+@font-face
+  font-family: "GilroyLight"
+  src : url("../fonts/Gilroy-Light.otf")
+
+@font-face
+  font-family: "GilroySemibold"
+  src : url("../fonts/Gilroy-Semibold.ttf")
+
+@font-face
+  font-family: "GilroyMedium"
+  src : url("../fonts/Gilroy-Medium.ttf")
+
+body
+  height: 100%
+
+.wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+.main
+  -webkit-box-flex: 1
+  -ms-flex: 1 0 auto
+  flex: 1 0 auto
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+  background-color: #ffffff
+  color: #EF5DA8
+  border-radius: 15px
+
+.dropdown-menu
+  top: 60px
+  right: 0px
+  left: unset
+  width: 300px
+  box-shadow: 0px 5px 7px -1px #c1c1c1
+  padding-bottom: 0px
+  padding: 0px
+
+.dropdown-menu:before
+  content: ""
+  position: absolute
+  top: -20px
+  right: 12px
+  border: 10px solid #5D5FEF
+  border-color: transparent transparent #5D5FEF transparent
+
+.head
+  padding: 5px 15px
+  border-radius: 3px 3px 0px 0px
+
+.footer
+  padding: 5px 15px
+  border-radius: 0px 0px 3px 3px
+
+.notification-box
+  padding: 10px 20px
+
+.bg-gray
+  background-color: #eee
+
+.nav-user-block
+  display: flex
+  align-items: center
+  gap: 10px
+  padding-top: 5px
+
+.user-block__title
+  font-size: 14px
+  font-family: "GilroySemiBold"
+
+.sidebar
+  position: relative
+  min-width: 234px
+  height: 574px
+  background-color: #F0F0F0
+  border-radius: 15px
+  padding: 16px 18px 16px 17px
+
+.sidebar .nav-item
+  border-radius: 15px
+  width: 199px
+  height: 58px
+
+.sidebar .nav-item a
+  font-family: "GilroyMedium"
+  font-size: 16px
+  line-height: 120%
+  color: #2F2F2F
+
+.sidebar .nav-item a svg
+  margin-right: 14px
+
+.nav-justified .nav-item
+  flex-basis: auto
+  flex-grow: 1
+  text-align: center
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: left
+  align-items: center
+  padding-left: 39px
+  border-radius: 15px
+  z-index: 3
+  position: relative
+
+
+
+.aside-custom:before
+  content: ""
+  width: 234px
+  height: 1px
+  background-color: #d7d7d7
+  position: absolute
+  bottom: 72px
+  left: 0
+  z-index: 1
+
+
+.nav
+  gap: 3px
+
+.navbar
+  padding-left: 0
+  padding-right: 0
+
+.main-content-block
+  display: flex
+  padding: 0
+  padding-left: 30px
+  flex-direction: column
+  row-gap: 20px
+
+.main-content-block .block-info
+  min-width: 646px
+  max-height: 400px
+  background: #F0F0F0
+  border-radius: 15px
+
+.main-content-block .block-chart
+  min-width: 270px
+  max-height: 400px
+  background: #F0F0F0
+  border-radius: 15px
+
+.block-table
+  width: 936px
+  height: 236px
+  background: #F0F0F0
+  border-radius: 15px
+
+//*
+//  outline: 1px solid red
+.main-content-block .block-info
+  display: flex
+  flex-direction: column
+  padding: 0
+
+
+.main-content-block .block-info .info__user
+  display: flex
+  align-items: center
+  column-gap: 22px
+  justify-content: space-between
+  padding: 21px 28px 28px 21px
+  border-bottom: 1px solid #c6c6c6
+
+.main-content-block .block-info .info__user .username img
+  padding-right: 22px
+
+.main-content-block .block-info .info__user .username span
+  font-size: 20px
+  font-family: "GilroyBold"
+
+.main-content-block .block-info .info__user .top
+  font-size: 10px
+  font-family: "GilroyLight"
+  background-color: #EF5DA8
+  height: 20px
+  width: 37px
+  border-radius: 47px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #ffffff
+  justify-self: end
+
+.info__tabs
+  padding: 21px 28px 28px 21px
+  display: flex
+  flex-direction: column
+  row-gap: 10px
+  border-bottom: 1px solid #c6c6c6
+
+.info__tabs .tabs-box
+  display: flex
+  column-gap: 12px
+
+.info__tabs .title
+  font-family: "GilroySemibold"
+  font-size: 19px
+  color: #2F2F2F
+
+.info__tabs .title span
+  font-size: 12px
+  color: #EF5DA8
+  font-family: GilroyLight
+
+.tabs-box .tabs-box__item
+  width: 115px
+  background: #FFFFFF
+  border-radius: 15px
+  height: 66px
+  display: flex
+  align-items: center
+  justify-content: center
+  column-gap: 8px
+
+.tabs-box .tabs-box__item span
+  font-size: 13px
+  color: #868686
+  font-family: "GilroyMedium"
+
+.tabs-box .tabs-box__item .ellipse
+  border-radius: 50%
+  width: 22px
+  height: 22px
+
+.tabs-box .tabs-box__item .ellipse-profile
+  background-color: #A5A6F6
+.tabs-box .tabs-box__item .ellipse-portfolio
+  background-color: #F178B6
+.tabs-box .tabs-box__item .ellipse-fresh
+  background-color: #3AC49F
+.tabs-box .tabs-box__item .ellipse-pro
+  background-color: #5D5FEF
+.tabs-box .tabs-box__item .ellipse-top
+  background-color: #EF5DA8
+
+.progress-box
+  padding: 21px 28px 28px 21px
+
+.cont
+  display: flex
+  column-gap: 15px
+  align-items: center
+
+.cont .title
+  display: flex
+
+.cont .bar
+  width: 100%
+  height: 15px
+  position: relative
+
+.bar-unfill
+  height: 15px
+  display: block
+  background: #C7C8FF
+  width: 100%
+  border-radius: 8px
+
+.cont .bar .bar-add-link
+  position: absolute
+  right: 20px
+  bottom: -1px
+  color: #5D5FEF
+  font-family: GilroySemiBold
+  font-size: 11px
+  text-decoration: none
+  cursor: pointer
+
+
+.bar-fill
+  height: 15px
+  display: block
+  background: #5D5FEF
+  width: 0%
+  border-radius: 8px
+  -webkit-transition: width .8s ease
+  -moz-transition: width .8s ease
+  transition: width .8s ease
+  -webkit-animation: progressbar 7s infinite
+  animation: progressbar 7s infinite
+
+@-webkit-keyframes progressbar
+  from
+    width: 0
+  to
+    width: 60%
+
+/* Стандартный синтаксис */
+@keyframes progressbar
+  from
+   width: 0
+  to
+   width: 60%
+
+
+.progress-box .title
+  font-family: "GilroySemibold"
+  font-size: 19px
+  color: #2F2F2F
+
+
+@media (max-width: 640px)
+  .dropdown-menu
+    top: 50px
+    left: -16px
+    width: 290px
+
+  .nav
+    display: block
+
+  .nav .nav-item,.nav .nav-item a
+    padding-left: 0px
+
+  .message
+    font-size: 13px
+
+
+
