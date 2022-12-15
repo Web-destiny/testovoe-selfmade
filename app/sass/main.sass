@@ -311,6 +311,251 @@ body
   color: #2F2F2F
 
 
+
+//
+//.block-chart .wrapper
+//  width: 100px /* Set the size of the progress bar */
+//  height: 100px
+//  position: absolute /* Enable clipping */
+//  clip: rect(0px, 100px, 100px, 50px) /* Hide half of the progress bar */
+//
+///* Set the sizes of the elements that make up the progress bar */
+//.circle
+//  width: 80px
+//  height: 80px
+//  border: 10px solid green
+//  border-radius: 50px
+//  position: absolute
+//  clip: rect(0px, 50px, 100px, 0px)
+//
+///* Using the data attributes for the animation selectors. */
+///* Base settings for all animated elements */
+//div[data-anim~=base]
+//  -webkit-animation-iteration-count: 1  /* Only run once */
+//  -webkit-animation-fill-mode: forwards /* Hold the last keyframe */
+//  -webkit-animation-timing-function: linear /* Linear animation */
+//
+//
+//.block-chart .wrapper[data-anim~=wrapper]
+//  -webkit-animation-duration: 0.01s /* Complete keyframes asap */
+//  -webkit-animation-delay: 3s /* Wait half of the animation */
+//  -webkit-animation-name: close-wrapper /* Keyframes name */
+//
+//
+//.circle[data-anim~=left]
+//  -webkit-animation-duration: 6s /* Full animation time */
+//  -webkit-animation-name: left-spin
+//
+//
+//.circle[data-anim~=right]
+//  -webkit-animation-duration: 3s /* Half animation time */
+//  -webkit-animation-name: right-spin
+//
+///* Rotate the right side of the progress bar from 0 to 180 degrees */
+//@-webkit-keyframes right-spin
+//  from
+//    -webkit-transform: rotate(0deg)
+//
+//  to
+//    -webkit-transform: rotate(180deg)
+//
+///* Rotate the left side of the progress bar from 0 to 360 degrees */
+//@-webkit-keyframes left-spin
+//  from
+//    -webkit-transform: rotate(0deg)
+//
+//  to
+//    -webkit-transform: rotate(360deg)
+//
+///* Set the wrapper clip to auto, effectively removing the clip */
+//@-webkit-keyframes close-wrapper
+//  to
+//    clip: rect(auto, auto, auto, auto)
+//
+//
+//.block-chart .wrapper2
+//  width: 200px /* Set the size of the progress bar */
+//  height: 200px
+//  position: absolute /* Enable clipping */
+//  right: 200px
+//  clip: rect(0px, 100px, 100px, 50px) /* Hide half of the progress bar */
+//
+///* Set the sizes of the elements that make up the progress bar */
+//.circle2
+//  width: 200px
+//  height: 200px
+//  border: 10px solid green
+//  border-radius: 100px
+//  position: absolute
+//  clip: rect(0px, 150px, 200px, 0px)
+//
+///* Using the data attributes for the animation selectors. */
+///* Base settings for all animated elements */
+//div[data-anim~=base2]
+//  -webkit-animation-iteration-count: 1  /* Only run once */
+//  -webkit-animation-fill-mode: forwards /* Hold the last keyframe */
+//  -webkit-animation-timing-function: linear /* Linear animation */
+//
+//
+//.block-chart .wrapper2[data-anim~=wrapper2]
+//  -webkit-animation-duration: 0.01s /* Complete keyframes asap */
+//  -webkit-animation-delay: 3s /* Wait half of the animation */
+//  -webkit-animation-name: close-wrapper /* Keyframes name */
+//
+//
+//.circle2[data-anim~=left2]
+//  -webkit-animation-duration: 6s /* Full animation time */
+//  -webkit-animation-name: left-spin
+//
+//
+//.circle2[data-anim~=right2]
+//  -webkit-animation-duration: 3s /* Half animation time */
+//  -webkit-animation-name: right-spin
+//
+///* Rotate the right side of the progress bar from 0 to 180 degrees */
+//@-webkit-keyframes right-spin
+//  from
+//    -webkit-transform: rotate(0deg)
+//
+//  to
+//    -webkit-transform: rotate(180deg)
+//
+///* Rotate the left side of the progress bar from 0 to 360 degrees */
+//@-webkit-keyframes left-spin
+//  from
+//    -webkit-transform: rotate(0deg)
+//
+//  to
+//    -webkit-transform: rotate(360deg)
+//
+///* Set the wrapper clip to auto, effectively removing the clip */
+//@-webkit-keyframes close-wrapper
+//  to
+//    clip: rect(auto, auto, auto, auto)
+
+.main-content-block .block-chart
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+
+.inner
+  background-color: #f0f0f0
+  transform: scale(0.88)
+
+.circle
+  width: 200px
+  height: 200px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+
+.circle1
+  width: 300px
+  height: 300px
+  background: #EF5DA8
+
+.inner1
+  transform: scale(0.9)
+
+.circle2
+  width: 255px
+  height: 255px
+  top: 66px
+  left: 39px
+  position: absolute
+  background: #5D5FEF
+
+.inner2
+  transform: scale(0.89)
+
+.circle3
+  width: 210px
+  height: 210px
+  top: 87px
+  left: 62px
+  position: absolute
+  background: #3AC39F
+
+.inner3
+  transform: scale(0.87)
+
+.circle4
+  width: 165px
+  height: 165px
+  top: 109px
+  left: 84px
+  position: absolute
+  background: #EF5DA8
+
+.inner4
+  transform: scale(0.85)
+
+.circle5
+  width: 125px
+  height: 125px
+  top: 128px
+  left: 104px
+  position: absolute
+  background: #A5A6F6
+
+.inner5
+  transform: scale(0.81)
+
+
+.circle>div
+  width: 100%
+  height: 100%
+  position: absolute
+  border-radius: 50%
+
+
+.outer
+  background-color: #bbbbbb
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 50% 0, 50% 50%, 50% 50%)
+
+
+
+
+//.circle:hover .outer
+//  animation: xxx 2s linear forwards
+.circle .outer
+  animation: xxx 2s linear forwards
+
+
+@keyframes xxx
+  12.5%
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 50%, 50% 50%)
+
+  25%
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 50%, 0 50%, 50% 50%, 50% 50%)
+
+  37.5%
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 100%, 0 100%, 50% 50%, 50% 50%)
+
+  50%
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 50%, 50% 50%)
+
+  62.5%
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%, 50% 50%)
+
+  75%
+    clip-path: polygon(50% 0%, 100% 0, 100% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 50%, 50% 50%, 50% 50%)
+
+  87.5%
+    clip-path: polygon(50% 0%, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 50% 50%, 50% 50%)
+
+  100%
+    clip-path: polygon(50% 0%, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 50%, 50% 50%)
+
+
+
+
+
+
+
 @media (max-width: 640px)
   .dropdown-menu
     top: 50px
