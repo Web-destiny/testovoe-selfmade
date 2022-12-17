@@ -781,6 +781,7 @@ section.charts-section-box {
   font-family: GilroyLight;
   font-size: 16px;
   color: #ffffff;
+  text-align: center;
 }
 
 .private-policy {
@@ -981,6 +982,9 @@ section.charts-section-box {
     top: 50px;
     left: -16px;
     width: 290px;
+  }
+  .bell {
+    display: none;
   }
   .nav .nav-item, .nav .nav-item a {
     padding-left: 0px;
